@@ -1,0 +1,230 @@
+/* ==========COMMON CSS STARTS========== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  width: 1170px;
+  margin: auto;
+}
+.button {
+  font-weight: 800;
+  font-size: 14px;
+  color: #0b1016;
+  padding: 19px 42px;
+  background-color: #cfc91d;
+  text-transform: uppercase;
+}
+.section-title {
+  text-align: center;
+  margin: 98px 0 0;
+  font-size: 46px;
+  color: #02918c;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.section-underline {
+  text-align: center;
+  color: #7e8287;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 35px 0;
+}
+/* ==========COMMON CSS ENDS========== */
+
+/* ==========NAVIGATION CSS STARTS========== */
+nav {
+  background-color: #02918c;
+  position: sticky;
+  top: 0;
+}
+nav .container {
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container div ul li {
+  display: inline-block;
+}
+nav .container div ul li a {
+  font-size: 12px;
+  color: #ffffff;
+  padding: 26px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+/* ==========NAVIGATION CSS ENDS========== */
+
+/* ==========BANNER CSS STARTS========== */
+#banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.555)),
+    url(../img/banner.jpg);
+  background-size: cover;
+  height: 728px;
+  background-repeat: no-repeat;
+}
+#banner .container {
+  text-align: center;
+  padding: 210px 0px;
+}
+#banner .container h5 {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 400;
+}
+#banner .container h1 {
+  font-size: 68px;
+  letter-spacing: 30px;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+#banner .container p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+#banner .container img {
+  margin: 52px 0px;
+  color: #d7d9db;
+}
+
+/* ==========BANNER CSS ENDS========== */
+
+/* ==========ABOUT CSS STARTS========== */
+#about .description {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e8287;
+  padding: 0 145px;
+  padding-bottom: 80px;
+}
+#about span {
+  font-weight: 800;
+  font-size: 23px;
+}
+.cards {
+  width: 25%;
+  padding: 55px 60px;
+  text-align: center;
+  border-right: 1px solid #d9dbdb;
+}
+.cards:last-child {
+  border: none;
+}
+.cards span {
+  color: #02918c;
+  font-size: 30px;
+  padding: 28px 0;
+}
+.cards h3 {
+  color: #7e8287;
+  font-size: 16px;
+  font-weight: 800;
+}
+.cards p {
+  padding: 30px 0;
+  font-size: 11px;
+  color: #7e8287;
+}
+#about .row {
+  padding-bottom: 98px;
+}
+
+/* ==========ABOUT CSS ENDS========== */
+
+/* ==========SERVICES CSS STARTS========== */
+
+#services {
+  background-image: url(../img/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 728px;
+}
+#services .content {
+  width: 50%;
+  padding: 74px 80px 85px 0;
+}
+#services .section-title {
+  text-align: left;
+  vertical-align: top;
+  margin-top: 0px;
+}
+#services .section-underline {
+  text-align: left;
+}
+#services .description {
+  text-align: left;
+}
+#services .cards {
+  width: 50%;
+  border: none;
+  padding: 60px 90px 0 0;
+  text-align: left;
+}
+#services .cards:nth-child(3) {
+  padding-top: 0;
+}
+#services .cards:nth-child(4) {
+  padding-top: 0;
+}
+/* ==========SERVICES CSS ENDS========== */
+
+/* ==========MY WORK CSS ENDS========== */
+#mywork .description {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e8287;
+  padding: 0 350px;
+  padding-bottom: 81px;
+}
+#mywork .work-card {
+  width: 25%;
+  display: block;
+}
+#mywork .work-card {
+  position: relative;
+}
+#mywork .work-card img {
+  width: 100%;
+  display: block;
+}
+#mywork .work-card .overlay {
+  position: absolute;
+  background-color: rgba(2, 145, 140, 85%);
+  padding: 58px 38px;
+  inset: 20px;
+  color: #ffffff;
+  text-align: center;
+  transform: scale(0);
+  transition: 0.4s;
+  opacity: 0;
+}
+#mywork .work-card:hover .overlay {
+  transform: scale(1);
+  opacity: 1;
+}
+#mywork .work-card .overlay h4 {
+  margin-bottom: 15px;
+}
+/* ==========MY WORK CSS ENDS========== */
